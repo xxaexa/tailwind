@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400&display=swap" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body class="font-main bg-gradient-to-t from-bground to-white">
+    <!-- HEADER -->
+    <header>
+      <nav class="w-full bg-blu bg-opacity-30 h-12">
+        <ul class="container flex justify-center space-x-4 px-2 py-2 group-hover:">
+          <li class="text-base md:text-2xl lg:text-3xl hover:text-white">
+            <a href="#skills">KEMAMPUAN</a>
+          </li>
+          <li class="text-base md:text-2xl lg:text-3xl hover:text-white">
+            <a href="#portofolio">PORTOFOLIO</a>
+          </li>
+          <li class="text-base md:text-2xl lg:text-3xl hover:text-white">
+            <a href="#contact">KONTAK</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- TENTANG -->
+    <section id="tentang" class="my-10">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center lg:w-1/2">
+            <img src="./img/pp.jpg" alt="andreeka" class="rounded-full w-52 mx-auto my-3" />
+            <p class="text-blu text-4xl lg:text-5xl text-center my-3">ANDRE EKA</p>
+          </div>
+          <div class="w-full self-center lg:w-1/2">
+            <p class="mx-auto my-5 max-w-xs text-2xl lg:max-w-lg">
+              Saya Andre Eka mahasiswa semester 6, selama berkuliah saya menjadi tertarik dengan dunia pemrograman web akhirnya saya mencoba belajar mulai dari mencari tutorial,membaca dokumentasi sampai mengikuti beberapa kursus secara
+              online, karena saya ingin menjadi fullstack javascript
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- KEMAMPUAN -->
+    <section id="kemampuan" class="my-10">
+      <p class="text-blu text-4xl text-center mt-10 mb-5">SKILLS</p>
+      <p id="panduan" class="text-red-700 text-xl text-center">klik lingkaran dibawah</p>
+      <div class="container flex flex-wrap justify-center font-semibold">
+        <div class="circle bg-blu m-3 flex h-36 w-36 items-center justify-center rounded-full text-blu cursor-pointer hover:opacity-80">
+          <p class="text-center">
+            <br />
+            <span class="text-black">HTML</span>
+            <br />
+            HTML5
+          </p>
+        </div>
+        <div class="circle bg-blu m-3 flex h-36 w-36 items-center justify-center rounded-full text-blu cursor-pointer hover:opacity-80">
+          <p class="text-center">
+            TAILWINDCSS <br />
+            <span class="text-black">CSS</span>
+            <br />
+            BOOTSTRAP
+          </p>
+        </div>
+        <div class="circle bg-blu m-3 flex h-36 w-36 items-center justify-center rounded-full text-blu cursor-pointer hover:opacity-80">
+          <p class="text-center">
+            JQUERY
+            <br />
+            <span class="text-black">JS</span>
+            <br />
+            MEN STACK
+          </p>
+        </div>
+        <div class="circle bg-blu m-3 flex h-36 w-36 items-center justify-center rounded-full text-blu cursor-pointer hover:opacity-80">
+          <p class="text-center">
+            <br />
+            <span class="text-black">PHP</span>
+            <br />
+            PHP8
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- PORTOFOLIO -->
+    <section id="portofolio" class="mt-10">
+      <p class="text-blu text-3xl text-center">PORTOFOLIO</p>
+      <ul class="flex justify-center space-x-2">
+        <li class="active cursor-pointer" data-id="1">
+          <img src="./img/arrow.png" alt="" class="w-6" />
+        </li>
+        <li class="cursor-pointer" data-id="2">
+          <img src="./img/arrow.png" alt="" class="w-6" />
+        </li>
+        <li class="cursor-pointer" data-id="3">
+          <img src="./img/arrow.png" alt="" class="w-6" />
+        </li>
+      </ul>
+
+      <!-- TAB PORTOFOLIO1 -->
+      <div class="container text-2xl">
+        <div class="tab-portofolio active flex flex-wrap w-full justify-center p-10 bg-white bg-opacity-20 rounded-3xl shadow-xl" data-portofolio="1">
+          <div class="left md:w-1/2 self-center">
+            <p class="items-center mx-auto my-3 max-w-xs">
+              Portofolio pertama saya ini dibuat guna memenuhi tugas uas, namun inilah yang membuat saya tertarik dengan pemrograman web dan mulai belajar hingga sekarang dibuat menggunakan
+              <span class="font-bold">html bootstrap phpnative mysql</span>
+            </p>
+          </div>
+          <div class="right md:w-1/2 self-center">
+            <img src="./img/portofolio1.png" alt="portolio1" class="mx-auto my-3" />
+            <p class="my-3 text-center"><a href="" class="text-center my-2 bg-slate-400 rounded-lg px-3 hover:text-fuchsia-950">github</a></p>
+          </div>
+        </div>
+        <!-- TAB PORTOFOLIO2 -->
+        <div class="tab-portofolio flex flex-wrap w-full justify-center p-10 bg-white bg-opacity-20 rounded-3xl shadow-xl" data-portofolio="2">
+          <div class="left md:w-1/2 self-center">
+            <p class="items-center mx-auto my-3 max-w-xs">
+              Portofolio Kedua ini dibuat menggunakan MEN Stack
+              <span class="font-bold">html tailwindcss jquery nodejs express mongodb</span>
+            </p>
+          </div>
+          <div class="right md:w-1/2 self-center">
+            <p class="mx-auto text-center"></p>
+            <img src="./img/pp.jpg" alt="portolio1" class="mx-auto max-w-xs w-56 my-3" />
+            <p class="my-3 text-center"><a href="" class="text-center my-2 bg-slate-400 rounded-lg px-3 hover:text-fuchsia-950">github</a></p>
+          </div>
+        </div>
+        <!-- TAB PORTOFOLIO3 -->
+        <div class="tab-portofolio flex flex-wrap w-full justify-center p-10 bg-white bg-opacity-20 rounded-3xl shadow-xl" data-portofolio="3">
+          <div class="left md:w-1/2 self-center">
+            <p class="items-center mx-auto my-3 max-w-xs">
+              Portofolio Ketiga ini dibuat menggunakan MEN Stack namun kedepanya akan diupdate menggunakan REACT agar menjadi MERN Stack
+              <span class="font-bold">html tailwindcss nodejs express mongodb</span>
+            </p>
+          </div>
+          <div class="right md:w-1/2 self-center">
+            <img src="./img/pp.jpg" alt="portolio1" class="mx-auto max-w-xs w-56 my-3" />
+            <p class="my-3 text-center"><a href="" class="text-center my-2 bg-slate-400 rounded-lg px-3 hover:text-fuchsia-950">github</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- KONTAK -->
+    <section id="kontak" class="my-10">
+      <p class="text-blu text-3xl text-center mt-10 mb-5">CONTACT</p>
+      <div id="skills" class="container text-center">
+        <ul class="mx-auto lg:flex lg:justify-center lg:max-w-sm">
+          <li class="w-16 mx-auto">
+            <a href="https://twitter.com" target="blank"><img src="./img/twitter.png" alt="" class="my-5" /></a>
+          </li>
+          <li class="w-16 mx-auto">
+            <a href="https://www.instagram.com/andreekaaa1/" target="blank"><img src="./img/ig.png" alt="" class="my-5" /></a>
+          </li>
+          <li class="w-16 mx-auto">
+            <a href=""><img src="./img/mail.png" alt="" class="my-5" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <hr class="h-px bg-blue-300 dark:bg-gray-700" />
+      <a href="https://github.com/xxaexa" target="_blank"><img src="./img/exa.png" alt="exaLogo" class="w-16 mx-auto my-5" /></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

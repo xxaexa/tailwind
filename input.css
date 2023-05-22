@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show {
+  @apply text-white;
+}
+
+.tab-portofolio {
+  @apply hidden;
+}
+.tab-portofolio.active {
+  @apply flex;
+}
+
+#portofolio ul li.active {
+  @apply rotate-180 bg-white bg-opacity-40 shadow-xl;
+}
